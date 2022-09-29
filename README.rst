@@ -1,6 +1,11 @@
 ###########################
-python-aqi - AQI conversion
+pyaqi - fork of python-aqi AQI conversion
 ###########################
+
+The project seems to be abandoned, will try and add more aqi standards.
+
+Old Readme
+=====================================================================
 
 A library to convert between AQI value and pollutant concentration
 (µg/m³ or ppm) using the following algorithms:
