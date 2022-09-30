@@ -26,7 +26,7 @@ def list_algos():
     pollutant
     """
     _algos = []
-    algos_pkg = 'aqi.algos'
+    algos_pkg = 'aqicalc.algos'
 
     package = __import__(algos_pkg, fromlist=[algos_pkg])
     for importer, modname, ispkg in pkgutil.iter_modules(package.__path__):
