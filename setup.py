@@ -11,13 +11,13 @@ long_description = open(os.path.join(here, 'README.rst')).read()
 #os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
-    name='python-aqi',
-    version="0.6.1",
-    author="Stefan \"hr\" Berder",
-    author_email="hr@bonz.org",
+    name='aqicalc',
+    version="0.0.1",
+    author="Pareekshith \"hr\" Katti",
+    author_email=" ",
     license="BSD 3-Clause",
     packages=find_packages(exclude=['contrib', 'docs', 'test*']),
-    url='https://github.com/hrbonz/python-aqi',
+    url='https://github.com/Paree24/aqicalc',
     description='A library to convert between AQI value and pollutant '
     'concentration (µg/m³ or ppm)',
     long_description=long_description,
@@ -27,8 +27,7 @@ setup(
         'Intended Audience :: Developers',
         'Intended Audience :: Healthcare Industry',
         'License :: OSI Approved :: BSD License',
-        'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3.3',
+        'Programming Language :: Python :: 3.9',
     ],
     keywords='air quality pm2.5 EPA MEP',
     entry_points = {
