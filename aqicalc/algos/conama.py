@@ -2,11 +2,11 @@
 
 from decimal import *
 
-from aqi.constants import (POLLUTANT_PM25, POLLUTANT_PM10,
+from aqicalc.constants import (POLLUTANT_PM25, POLLUTANT_PM10,
                           POLLUTANT_O3_8H, POLLUTANT_O3_1H,
                           POLLUTANT_CO_8H, POLLUTANT_SO2_1H,
                           POLLUTANT_NO2_1H)
-from aqi.algos.base import PiecewiseAQI
+from aqicalc.algos.base import PiecewiseAQI
 
 
 class AQI(PiecewiseAQI):
