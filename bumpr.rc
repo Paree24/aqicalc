@@ -1,5 +1,5 @@
 [bumpr]
-file = aqi/__init__.py
+file = aqicalc/__init__.py
 vcs = git
 clean =
     python setup.py clean
@@ -16,4 +16,4 @@ unsuffix = True
 message = bump version to {version}
 
 [readthedoc]
-id = python-aqi
+id = aqicalc
