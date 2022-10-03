@@ -75,6 +75,23 @@ def convert_grams_to_parts(x,pollutant):
     else:
         raise InvalidConversionArguments('Pollutant or Value Invalid')
 
+def convert_parts_to_grams(x,pollutant):
+    """
+    Converts ppb to ug/m3 for O3, NO2 and SO2 and ppm to mg/m3 for CO.
+    Note: If you are looking to convert ppb for CO, multiply the results by 1000
+    If you are looking to convert ppm to ppb multiply results by 1000 and divide for vice versa
+    """
+    if pollutant==POLLUTANT_O3_1H or pollutant==POLLUTANT_O3_8H:
+        return x*1.96  # ugm3 to ppb
+    if pollutant==POLLUTANT_NO2_1H or pollutant==POLLUTANT_NO2_24H:
+        return x*1.88  # ugm3 to ppb
+    if pollutant==POLLUTANT_CO_1H or pollutant==POLLUTANT_CO_24H or pollutant==POLLUTANT_CO_8H:
+        return x*1.15  # mgm3 to ppb
+    if pollutant==POLLUTANT_SO2_1H or pollutant==POLLUTANT_SO2_24H:
+        return x*2.62  # ugm3 to ppb
+    else:
+        raise InvalidConversionArguments('Pollutant or Value Invalid')
+
 def console_aqi():
     """Console entry point, this function is used as an entry point to
     the 'aqi' command.
