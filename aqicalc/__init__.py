@@ -85,6 +85,37 @@ def convert_grams_to_parts(x, pollutant):
     else:
         raise InvalidConversionArguments('Pollutant or Value Invalid')
 
+def convert_ppm_to_ppb(ppm):
+    "converts ppm to ppb"
+    return ppm*1000
+
+def convert_ppb_to_ppm(ppb):
+    "converts ppb to ppm"
+    return ppb/1000
+
+def convert_pphm_to_ppb(pphm):
+    "converts pphm to ppb"
+    return pphm*10
+
+def convert_ppb_to_pphm(ppb):
+    "converts ppb to pphm"
+    return ppb/10
+
+def convert_pphm_to_ppm(pphm):
+    "converts pphm to ppm"
+    return pphm/100
+
+def convert_ppm_to_pphm(ppm):
+    "converts ppm to pphm"
+    return ppm*100
+
+def convert_milli_to_micro(milli):
+    "converts mg/m3 to ug/m3"
+    return milli*1000
+
+def convert_micro_to_milli(micro):
+    "converts ug/m3 to mg/m3"
+    return micro/1000
 
 def convert_parts_to_grams(x, pollutant):
     """

@@ -29,6 +29,7 @@ Usage
 
 Library
 -------
+NOTE: Different standards use different units for calculating AQI, use the appropriate units to get correct results. Examples for getting the units for each standards as well as unit conversion is avaiable (examples soon!)
 
 Convert a pollutant to its IAQI (Intermediate Air Quality Index)::
 
