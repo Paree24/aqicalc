@@ -15,9 +15,9 @@ Classifier: License :: OSI Approved :: BSD License
 Classifier: Programming Language :: Python :: 3.9
 License-File: LICENSE
 
-###########################
+#################################################################################
 pyaqi - fork of python-aqi AQI conversion
-###########################
+#################################################################################
 
 
 A library to convert between AQI value and pollutant concentration
