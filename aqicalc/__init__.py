@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-import argparse
-
 from aqicalc.constants import *
 
 from aqicalc.algos import get_algo, list_algos
@@ -11,6 +9,9 @@ __contact__ = "hr@bonz.org"
 __license__ = "BSD 3-Clause"
 __version__ = "0.6.1"
 
+
+class InvalidConversionArguments(Exception):
+    pass
 
 def to_iaqi(elem, cc, algo=ALGO_EPA):
     """Calculate an intermediate AQI for a given pollutant. This is the
@@ -55,6 +56,24 @@ def to_cc(elem, iaqi, algo=ALGO_EPA):
     """
     _aqi = get_algo(algo)
     return _aqi.cc(elem, iaqi)
+
+
+def convert_grams_to_parts(x,pollutant):
+    """
+    Converts ug/m3 to ppb for O3, NO2 and SO2 and mg/m3 to ppm for CO.
+    Note: If you are looking to convert ug/m3 for CO, multiply the results by 1000
+    If you are looking to convert ppm to ppb multiply results by 1000 and divide for vice versa
+    """
+    if pollutant==POLLUTANT_O3_1H or pollutant==POLLUTANT_O3_8H:
+        return x/1.96  # ugm3 to ppb
+    if pollutant==POLLUTANT_NO2_1H or pollutant==POLLUTANT_NO2_24H:
+        return x/1.88  # ugm3 to ppb
+    if pollutant==POLLUTANT_CO_1H or pollutant==POLLUTANT_CO_24H or pollutant==POLLUTANT_CO_8H:
+        return x/1.15  # mgm3 to ppb
+    if pollutant==POLLUTANT_SO2_1H or pollutant==POLLUTANT_SO2_24H:
+        return x/2.62  # ugm3 to ppb
+    else:
+        raise InvalidConversionArguments('Pollutant or Value Invalid')
 
 def console_aqi():
     """Console entry point, this function is used as an entry point to
