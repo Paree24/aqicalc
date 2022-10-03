@@ -2,24 +2,14 @@
 pyaqi - fork of python-aqi AQI conversion
 ###########################
 
-The project seems to be abandoned, will try and add more aqi standards.
-
-Old Readme
-=====================================================================
 
 A library to convert between AQI value and pollutant concentration
 (µg/m³ or ppm) using the following algorithms:
 
 * United States Environmental Protection Agency (EPA)
 * China Ministry of Environmental Protection (MEP)
+* Central Pollution Control Board (CPCB) India
 
-.. image:: https://travis-ci.org/hrbonz/python-aqi.svg?branch=master
-    :target: https://travis-ci.org/hrbonz/python-aqi
-    :alt: Testing Status
-
-.. image:: https://readthedocs.org/projects/python-aqi/badge/?version=0.6.1
-    :target: https://readthedocs.org/projects/python-aqi/?badge=latest
-    :alt: Documentation Status
 
 .. image:: http://img.shields.io/badge/license-BSD%203--Clause-blue.svg
     :target: http://opensource.org/licenses/BSD-3-Clause
@@ -31,7 +21,7 @@ Install
 
 ::
 
-    $ pip install python-aqi
+    $ pip install aqicalc
 
 
 Usage
@@ -42,12 +32,12 @@ Library
 
 Convert a pollutant to its IAQI (Intermediate Air Quality Index)::
 
-    import aqi
+    import aqicalc as aqi
     myaqi = aqi.to_iaqi(aqi.POLLUTANT_PM25, '12', algo=aqi.ALGO_EPA)
 
 Get an AQI out of several pollutant concentrations, default algorithm is EPA::
 
-    import aqi
+    import aqicalc as aqi
     myaqi = aqi.to_aqi([
         (aqi.POLLUTANT_PM25, '12'),
         (aqi.POLLUTANT_PM10, '24'),
@@ -56,7 +46,7 @@ Get an AQI out of several pollutant concentrations, default algorithm is EPA::
 
 Convert an IAQI to its pollutant concentration::
 
-    import aqi
+    import aqicalc as aqi
     mycc = aqi.to_cc(aqi.POLLUTANT_PM25, '22', algo=aqi.ALGO_EPA)
 
 
@@ -126,10 +116,9 @@ Use `bumpr` to release the package::
 
 Project
 =======
+*  `Source code on github <https://github.com/Paree24/aqicalc>`
+* `Forked from <https://github.com/hrbonz/python-aqi>`_
 
-* `Source code on github <https://github.com/hrbonz/python-aqi>`_
-* `Documentation on readthedocs <http://python-aqi.readthedocs.org/>`_
-* `Package on pypi <https://pypi.python.org/pypi/python-aqi>`_
 
 
 Resources
@@ -142,10 +131,13 @@ Resources
 
     * GB3095—2012 (2012/02/29) found at http://www.mep.gov.cn/gkml/hbb/bwj/201203/t20120302_224147.htm
     * HJ633-2012 (2012/02/29) found at http://www.zzemc.cn/em_aw/Content/HJ633-2012.pdf
+* CPCB AQI:
+    * https://app.cpcbccr.com/ccr_docs/About_AQI.pdf
+  
 
 
 License
 =======
 
-python-aqi is published under a BSD 3-clause license, see the LICENSE file
+aqicalc is published under a BSD 3-clause license, see the LICENSE file
 distributed with the project.

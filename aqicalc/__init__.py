@@ -61,6 +61,13 @@ def to_cc(elem, iaqi, algo=ALGO_EPA):
     return _aqi.cc(elem, iaqi)
 
 
+def get_units(algo=ALGO_EPA):
+    """
+    Returns units
+    """
+    _aqi = get_algo(algo)
+    return _aqi.get_units()
+
 def convert_grams_to_parts(x, pollutant):
     """
     Converts ug/m3 to ppb for O3, NO2 and SO2 and mg/m3 to ppm for CO.
