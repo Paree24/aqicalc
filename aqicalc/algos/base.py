@@ -124,3 +124,6 @@ class PiecewiseAQI(BaseAQI):
 
     def list_pollutants(self):
         return self.piecewise['units'].items()
+
+    def get_units(self):
+        return self.piecewise['units']

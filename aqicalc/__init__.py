@@ -13,6 +13,7 @@ __version__ = "0.6.1"
 class InvalidConversionArguments(Exception):
     pass
 
+
 def to_iaqi(elem, cc, algo=ALGO_EPA):
     """Calculate an intermediate AQI for a given pollutant. This is the
     heart of the algo.
@@ -30,6 +31,7 @@ def to_iaqi(elem, cc, algo=ALGO_EPA):
     _aqi = get_algo(algo)
     return _aqi.iaqi(elem, cc)
 
+
 def to_aqi(ccs, algo=ALGO_EPA):
     """Calculate the AQI based on a list of pollutants
 
@@ -41,6 +43,7 @@ def to_aqi(ccs, algo=ALGO_EPA):
     """
     _aqi = get_algo(algo)
     return _aqi.aqi(ccs)
+
 
 def to_cc(elem, iaqi, algo=ALGO_EPA):
     """Calculate a concentration for a given pollutant.
@@ -58,39 +61,41 @@ def to_cc(elem, iaqi, algo=ALGO_EPA):
     return _aqi.cc(elem, iaqi)
 
 
-def convert_grams_to_parts(x,pollutant):
+def convert_grams_to_parts(x, pollutant):
     """
     Converts ug/m3 to ppb for O3, NO2 and SO2 and mg/m3 to ppm for CO.
     Note: If you are looking to convert ug/m3 for CO, multiply the results by 1000
     If you are looking to convert ppm to ppb multiply results by 1000 and divide for vice versa
     """
-    if pollutant==POLLUTANT_O3_1H or pollutant==POLLUTANT_O3_8H:
+    if pollutant == POLLUTANT_O3_1H or pollutant == POLLUTANT_O3_8H:
         return x/1.96  # ugm3 to ppb
-    if pollutant==POLLUTANT_NO2_1H or pollutant==POLLUTANT_NO2_24H:
+    if pollutant == POLLUTANT_NO2_1H or pollutant == POLLUTANT_NO2_24H:
         return x/1.88  # ugm3 to ppb
-    if pollutant==POLLUTANT_CO_1H or pollutant==POLLUTANT_CO_24H or pollutant==POLLUTANT_CO_8H:
+    if pollutant == POLLUTANT_CO_1H or pollutant == POLLUTANT_CO_24H or pollutant == POLLUTANT_CO_8H:
         return x/1.15  # mgm3 to ppb
-    if pollutant==POLLUTANT_SO2_1H or pollutant==POLLUTANT_SO2_24H:
+    if pollutant == POLLUTANT_SO2_1H or pollutant == POLLUTANT_SO2_24H:
         return x/2.62  # ugm3 to ppb
     else:
         raise InvalidConversionArguments('Pollutant or Value Invalid')
 
-def convert_parts_to_grams(x,pollutant):
+
+def convert_parts_to_grams(x, pollutant):
     """
     Converts ppb to ug/m3 for O3, NO2 and SO2 and ppm to mg/m3 for CO.
     Note: If you are looking to convert ppb for CO, multiply the results by 1000
     If you are looking to convert ppm to ppb multiply results by 1000 and divide for vice versa
     """
-    if pollutant==POLLUTANT_O3_1H or pollutant==POLLUTANT_O3_8H:
+    if pollutant == POLLUTANT_O3_1H or pollutant == POLLUTANT_O3_8H:
         return x*1.96  # ugm3 to ppb
-    if pollutant==POLLUTANT_NO2_1H or pollutant==POLLUTANT_NO2_24H:
+    if pollutant == POLLUTANT_NO2_1H or pollutant == POLLUTANT_NO2_24H:
         return x*1.88  # ugm3 to ppb
-    if pollutant==POLLUTANT_CO_1H or pollutant==POLLUTANT_CO_24H or pollutant==POLLUTANT_CO_8H:
+    if pollutant == POLLUTANT_CO_1H or pollutant == POLLUTANT_CO_24H or pollutant == POLLUTANT_CO_8H:
         return x*1.15  # mgm3 to ppb
-    if pollutant==POLLUTANT_SO2_1H or pollutant==POLLUTANT_SO2_24H:
+    if pollutant == POLLUTANT_SO2_1H or pollutant == POLLUTANT_SO2_24H:
         return x*2.62  # ugm3 to ppb
     else:
         raise InvalidConversionArguments('Pollutant or Value Invalid')
+
 
 def console_aqi():
     """Console entry point, this function is used as an entry point to
@@ -99,8 +104,7 @@ def console_aqi():
     import sys
     import argparse
 
-    parser = argparse.ArgumentParser(description=
-    """Convert between AQI value and pollutant concentration (µg/m³ or
+    parser = argparse.ArgumentParser(description="""Convert between AQI value and pollutant concentration (µg/m³ or
     ppm).""")
     parser.add_argument('-c', dest='conv', choices=['aqi', 'cc'], default='aqi',
                         help="Conversion to perform, defaults to 'aqi'")
@@ -123,8 +127,8 @@ def console_aqi():
         for _algo in list_algos():
             print("{algo}: {elem}".format(
                 algo=_algo[0], elem=', '.join(
-                ["{0} ({1})".format(elem, unit) for (elem, unit) \
-                 in _algo[1]])))
+                    ["{0} ({1})".format(elem, unit) for (elem, unit)
+                     in _algo[1]])))
     else:
         # if not listing but missing other positional argument
         if args.algo is None or args.measures is None:
