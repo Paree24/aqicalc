@@ -1,6 +1,23 @@
-#################################################################################
+Metadata-Version: 2.1
+Name: aqicalc
+Version: 0.0.1
+Summary: A library to convert between AQI value and pollutant concentration (µg/m³ or ppm)
+Home-page: https://github.com/Paree24/aqicalc
+Author: Pareekshith "hr" Katti
+Author-email:  
+License: BSD 3-Clause
+Keywords: air quality pm2.5 EPA MEP
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE
+
+###########################
 pyaqi - fork of python-aqi AQI conversion
-#################################################################################
+###########################
 
 
 A library to convert between AQI value and pollutant concentration
