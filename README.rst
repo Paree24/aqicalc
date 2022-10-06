@@ -1,5 +1,5 @@
 #################################################################################
-aqicalc - fork of python-aqi AQI conversion
+aqicalc
 #################################################################################
 
 
@@ -10,6 +10,8 @@ A library to convert between AQI value and pollutant concentration
 * China Ministry of Environmental Protection (MEP)
 * Central Pollution Control Board (CPCB) India
 
+
+Forked from python-aqi library
 
 .. image:: http://img.shields.io/badge/license-BSD%203--Clause-blue.svg
     :target: http://opensource.org/licenses/BSD-3-Clause
