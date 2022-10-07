@@ -16,6 +16,7 @@ Forked from python-aqi library
 Changes from the original library
 =================================
 * Added CPCB AQI Calculation
+* Added IEMA Brazil AQI Calculation
 * Added Unit Conversion Functions
 * Added Exception Handling (returns the number or NaN back if it can't convert)
 
@@ -142,6 +143,8 @@ Resources
     * HJ633-2012 (2012/02/29) found at http://www.zzemc.cn/em_aw/Content/HJ633-2012.pdf
 * CPCB AQI:
     * https://app.cpcbccr.com/ccr_docs/About_AQI.pdf
+* IEMA AQI: https://iema.es.gov.br/Media/iema/CQAI/Cartilha/Guia_Qualidade_Ar_ebook.pdf
+    * https://iema.es.gov.br/qualidadedoar/indicedequalidadedoar
   
 
 
