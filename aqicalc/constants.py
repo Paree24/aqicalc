@@ -17,5 +17,5 @@ POLLUTANT_NO2_24H = 'no2_24h'
 ALGO_EPA = 'aqicalc.algos.epa'
 ALGO_MEP = 'aqicalc.algos.mep'
 ALGO_CPCB = 'aqicalc.algos.cpcb'
-
-ALGOS = [ALGO_EPA, ALGO_MEP,ALGO_CPCB]
+ALGO_IEMA = 'aqicalc.algos.iema'
+ALGOS = [ALGO_EPA, ALGO_MEP,ALGO_CPCB,ALGO_IEMA]
