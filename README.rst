@@ -13,6 +13,12 @@ A library to convert between AQI value and pollutant concentration
 
 Forked from python-aqi library
 
+Changes from the original library
+=================================
+* Added CPCB AQI Calculation
+* Added Unit Conversion Functions
+* Added Exception Handling (returns the number or NaN back if it can't convert)
+
 .. image:: http://img.shields.io/badge/license-BSD%203--Clause-blue.svg
     :target: http://opensource.org/licenses/BSD-3-Clause
     :alt: license BSD 3-Clause
