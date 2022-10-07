@@ -12,7 +12,7 @@ long_description = open(os.path.join(here, 'README.rst')).read()
 
 setup(
     name='aqicalc',
-    version="0.0.1",
+    version="0.0.3",
     author="Pareekshith US Katti",
     author_email=" ",
     license="BSD 3-Clause",
@@ -29,7 +29,7 @@ setup(
         'License :: OSI Approved :: BSD License',
         'Programming Language :: Python :: 3.9',
     ],
-    keywords='air quality pm2.5 EPA MEP',
+    keywords='air quality pm2.5 EPA MEP CPCB',
     entry_points = {
         'console_scripts': [
             'aqi=aqi:console_aqi',
