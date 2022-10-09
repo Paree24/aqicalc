@@ -13,6 +13,7 @@ aqicalc/algos/__init__.py
 aqicalc/algos/base.py
 aqicalc/algos/cpcb.py
 aqicalc/algos/epa.py
+aqicalc/algos/iema.py
 aqicalc/algos/mep.py
 test/test_algos.py
 test/test_aqi.py
