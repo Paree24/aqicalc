@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: aqicalc
-Version: 0.0.4
+Version: 0.0.5
 Summary: A library to convert between AQI value and pollutant concentration (µg/m³ or ppm)
 Home-page: https://github.com/Paree24/aqicalc
 Author: Pareekshith US Katti
@@ -34,6 +34,7 @@ Changes from the original library
 =================================
 * Added CPCB AQI Calculation
 * Added IEMA Brazil AQI Calculation
+* Added Kuwait AQI
 * Added Unit Conversion Functions
 * Added Exception Handling (returns the number or NaN back if it can't convert)
 
@@ -162,6 +163,7 @@ Resources
     * https://app.cpcbccr.com/ccr_docs/About_AQI.pdf
 * IEMA AQI: https://iema.es.gov.br/Media/iema/CQAI/Cartilha/Guia_Qualidade_Ar_ebook.pdf
     * https://iema.es.gov.br/qualidadedoar/indicedequalidadedoar
+* Kuwait AQI : https://enterprise.emisk.org/eMISKAirQuality/#/KAQI
   
 
 

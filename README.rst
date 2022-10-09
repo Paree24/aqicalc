@@ -17,6 +17,7 @@ Changes from the original library
 =================================
 * Added CPCB AQI Calculation
 * Added IEMA Brazil AQI Calculation
+* Added Kuwait AQI
 * Added Unit Conversion Functions
 * Added Exception Handling (returns the number or NaN back if it can't convert)
 
@@ -145,6 +146,8 @@ Resources
     * https://app.cpcbccr.com/ccr_docs/About_AQI.pdf
 * IEMA AQI: https://iema.es.gov.br/Media/iema/CQAI/Cartilha/Guia_Qualidade_Ar_ebook.pdf
     * https://iema.es.gov.br/qualidadedoar/indicedequalidadedoar
+* Kuwait AQI : https://enterprise.emisk.org/eMISKAirQuality/#/KAQI
+* CAQI : https://www.airqualitynow.eu/download/CITEAIR-Comparing_Urban_Air_Quality_across_Borders.pdf
   
 
 

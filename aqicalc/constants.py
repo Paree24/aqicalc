@@ -18,4 +18,6 @@ ALGO_EPA = 'aqicalc.algos.epa'
 ALGO_MEP = 'aqicalc.algos.mep'
 ALGO_CPCB = 'aqicalc.algos.cpcb'
 ALGO_IEMA = 'aqicalc.algos.iema'
-ALGOS = [ALGO_EPA, ALGO_MEP,ALGO_CPCB,ALGO_IEMA]
+ALGO_KAQI = 'aqicalc.algos.kaqi'
+ALGO_CAQI = 'aqicalc.algos.caqi'
+ALGOS = [ALGO_EPA, ALGO_MEP,ALGO_CPCB,ALGO_IEMA,ALGO_KAQI]
