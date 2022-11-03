@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: aqicalc
-Version: 0.0.5
+Version: 0.0.6
 Summary: A library to convert between AQI value and pollutant concentration (µg/m³ or ppm)
 Home-page: https://github.com/Paree24/aqicalc
 Author: Pareekshith US Katti
@@ -164,6 +164,7 @@ Resources
 * IEMA AQI: https://iema.es.gov.br/Media/iema/CQAI/Cartilha/Guia_Qualidade_Ar_ebook.pdf
     * https://iema.es.gov.br/qualidadedoar/indicedequalidadedoar
 * Kuwait AQI : https://enterprise.emisk.org/eMISKAirQuality/#/KAQI
+* CAQI : https://www.airqualitynow.eu/download/CITEAIR-Comparing_Urban_Air_Quality_across_Borders.pdf
   
 
 

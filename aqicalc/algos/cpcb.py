@@ -26,7 +26,7 @@ class AQI(PiecewiseAQI):
                 (Decimal('101'), Decimal('168')),
                 (Decimal('169'), Decimal('208')),
                 (Decimal('209'), Decimal('748')),
-                (Decimal('748'), inf),
+                (Decimal('749'), inf),
             ],
             POLLUTANT_O3_1H: [
                 (Decimal('0'), Decimal('50')),
@@ -34,7 +34,7 @@ class AQI(PiecewiseAQI):
                 (Decimal('101'), Decimal('168')),
                 (Decimal('169'), Decimal('208')),
                 (Decimal('209'), Decimal('748')),
-                (Decimal('748'), inf),
+                (Decimal('749'), inf),
             ],
             POLLUTANT_PM10: [
                 (Decimal('0'), Decimal('50')),
@@ -42,7 +42,7 @@ class AQI(PiecewiseAQI):
                 (Decimal('101'), Decimal('250')),
                 (Decimal('251'), Decimal('350')),
                 (Decimal('351'), Decimal('430')),
-                (Decimal('430'), inf),
+                (Decimal('431'), inf),
             ],
             POLLUTANT_PM25: [
                 (Decimal('0'), Decimal('30')),
@@ -50,7 +50,7 @@ class AQI(PiecewiseAQI):
                 (Decimal('61'), Decimal('90')),
                 (Decimal('91'), Decimal('120')),
                 (Decimal('121'), Decimal('250')),
-                (Decimal('250'), inf),
+                (Decimal('251'), inf),
             ],
             POLLUTANT_CO_8H: [
                 (Decimal('0.0'), Decimal('1.0')),
@@ -66,7 +66,7 @@ class AQI(PiecewiseAQI):
                 (Decimal('81'), Decimal('380')),
                 (Decimal('381'), Decimal('800')),
                 (Decimal('801'), Decimal('1600')),
-                (Decimal('1600'), inf),
+                (Decimal('1601'), inf),
             ],
             POLLUTANT_NO2_1H: [
                 (Decimal('0'), Decimal('40')),
@@ -74,7 +74,7 @@ class AQI(PiecewiseAQI):
                 (Decimal('81'), Decimal('180')),
                 (Decimal('181'), Decimal('280')),
                 (Decimal('281'), Decimal('400')),
-                (Decimal('400'), inf),
+                (Decimal('401'), inf),
             ],
         },
         'prec': {

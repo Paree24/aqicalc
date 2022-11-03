@@ -11,6 +11,7 @@ aqicalc.egg-info/entry_points.txt
 aqicalc.egg-info/top_level.txt
 aqicalc/algos/__init__.py
 aqicalc/algos/base.py
+aqicalc/algos/caqi.py
 aqicalc/algos/cpcb.py
 aqicalc/algos/epa.py
 aqicalc/algos/iema.py
