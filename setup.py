@@ -17,7 +17,7 @@ setup(
     author_email=" ",
     license="BSD 3-Clause",
     packages=find_packages(exclude=['contrib', 'docs', 'test*']),
-    url='https://github.com/Paree24/aqicalc',
+    url='https://github.com/ambeelabs/aqicalc',
     description='A library to convert between AQI value and pollutant '
     'concentration (µg/m³ or ppm)',
     long_description=long_description,

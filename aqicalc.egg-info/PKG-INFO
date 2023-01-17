@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: aqicalc
-Version: 0.0.7
+Version: 0.0.8
 Summary: A library to convert between AQI value and pollutant concentration (µg/m³ or ppm)
 Home-page: https://github.com/Paree24/aqicalc
 Author: Ambee
