@@ -1,9 +1,9 @@
 Metadata-Version: 2.1
 Name: aqicalc
-Version: 0.0.6
+Version: 0.0.7
 Summary: A library to convert between AQI value and pollutant concentration (µg/m³ or ppm)
 Home-page: https://github.com/Paree24/aqicalc
-Author: Pareekshith US Katti
+Author: Ambee
 Author-email:  
 License: BSD 3-Clause
 Keywords: air quality pm2.5 EPA MEP CPCB
@@ -144,7 +144,7 @@ Use `bumpr` to release the package::
 
 Project
 =======
-*  `Source code on github <https://github.com/Paree24/aqicalc>`_
+*  `Source code on github <https://github.com/ambeelabs/aqicalc>`_
 * `Forked from python-aqi <https://github.com/hrbonz/python-aqi>`_
 
 

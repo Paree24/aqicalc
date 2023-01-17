@@ -12,7 +12,7 @@ long_description = open(os.path.join(here, 'README.rst')).read()
 
 setup(
     name='aqicalc',
-    version="0.0.7",
+    version="0.0.8",
     author="Ambee",
     author_email=" ",
     license="BSD 3-Clause",
