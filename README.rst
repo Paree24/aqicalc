@@ -127,7 +127,7 @@ Use `bumpr` to release the package::
 
 Project
 =======
-*  `Source code on github <https://github.com/Paree24/aqicalc>`_
+*  `Source code on github <https://github.com/ambeelabs/aqicalc>`_
 * `Forked from python-aqi <https://github.com/hrbonz/python-aqi>`_
 
 
