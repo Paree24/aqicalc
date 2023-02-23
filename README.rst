@@ -10,7 +10,6 @@ A library to convert between AQI value and pollutant concentration
 * China Ministry of Environmental Protection (MEP)
 * Central Pollution Control Board (CPCB) India
 * Kuwait AQI
-* CESTB Brazil
 * IEMA Brazil
 * CAQI Europe
 
