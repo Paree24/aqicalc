@@ -9,6 +9,10 @@ A library to convert between AQI value and pollutant concentration
 * United States Environmental Protection Agency (EPA)
 * China Ministry of Environmental Protection (MEP)
 * Central Pollution Control Board (CPCB) India
+* Kuwait AQI
+* CESTB Brazil
+* IEMA Brazil
+* CAQI Europe
 
 
 Forked from python-aqi library
